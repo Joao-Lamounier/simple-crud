@@ -1,32 +1,20 @@
 package application;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import domain.entities.Cidade;
-import domain.entities.Pessoa;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 
 @SpringBootApplication
 public class Main {
-    public static void main(String[] args){
-
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("simple_crud");
-
-        EntityManager em = emf.createEntityManager();
-        Cidade c1 = em.find(Cidade.class, 2);
-        System.out.println(c1);
-        em.close();
-        emf.close();
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("simple_crud");
+//
+//        EntityManager em = emf.createEntityManager();
+//        Cidade c1 = em.find(Cidade.class, 2);
+//        System.out.println(c1);
+//        em.close();
+//        emf.close();
 //        List<Cidade> cidades = lerArquivoJson("/home/joao/Documentos/cidadesjson/cidades.json");
 
 //        em.getTransaction().begin();
@@ -72,4 +60,6 @@ public class Main {
 //
 //        return cidades;
 //    }
+
 }
+

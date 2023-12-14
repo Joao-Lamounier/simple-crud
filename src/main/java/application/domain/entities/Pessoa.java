@@ -1,6 +1,5 @@
-package domain.entities;
+package application.domain.entities;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
