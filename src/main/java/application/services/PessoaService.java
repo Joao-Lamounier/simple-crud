@@ -2,6 +2,7 @@ package application.services;
 
 import application.domain.entities.Pessoa;
 import application.repositories.PessoaRepository;
+import application.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,15 +20,17 @@ public class PessoaService {
 
     public Pessoa findById(Integer id) {
         Optional<Pessoa> obj = repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public Pessoa insert(Pessoa obj) {
         return repository.save(obj);
     }
+
     public void delete(Integer id) {
         repository.deleteById(id);
     }
+
     public Pessoa update(Integer id, Pessoa obj) {
         Pessoa entity = repository.getReferenceById(id);
         updateData(entity, obj);
