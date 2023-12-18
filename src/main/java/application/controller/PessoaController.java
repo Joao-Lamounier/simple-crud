@@ -41,4 +41,9 @@ public class PessoaController {
         service.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<Pessoa> update(@PathVariable Integer id, @RequestBody Pessoa obj){
+        obj = service.update(id, obj);
+        return ResponseEntity.ok().body(obj);    }
 }

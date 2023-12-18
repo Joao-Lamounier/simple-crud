@@ -28,4 +28,18 @@ public class PessoaService {
     public void delete(Integer id) {
         repository.deleteById(id);
     }
+    public Pessoa update(Integer id, Pessoa obj) {
+        Pessoa entity = repository.getReferenceById(id);
+        updateData(entity, obj);
+        return repository.save(entity);
+    }
+
+    private void updateData(Pessoa entity, Pessoa obj) {
+        entity.setNome(obj.getNome());
+        entity.setApelido(obj.getApelido());
+        entity.setCidade(obj.getCidade());
+        entity.setCpf(obj.getCpf());
+        entity.setHobbie(obj.getHobbie());
+        entity.setTime(obj.getTime());
+    }
 }
