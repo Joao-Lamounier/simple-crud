@@ -9,6 +9,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,19 +32,23 @@ public class PessoaService {
     }
 
     public void delete(Integer id) {
-        try{
+        try {
             repository.deleteById(id);
-        }catch (EmptyResultDataAccessException e){
+        } catch (EmptyResultDataAccessException e) {
             throw new ResourceNotFoundException(id);
-        } catch (DataIntegrityViolationException e){
+        } catch (DataIntegrityViolationException e) {
             throw new DataBaseException(e.getMessage());
         }
     }
 
     public Pessoa update(Integer id, Pessoa obj) {
-        Pessoa entity = repository.getReferenceById(id);
-        updateData(entity, obj);
-        return repository.save(entity);
+        try {
+            Pessoa entity = repository.getReferenceById(id);
+            updateData(entity, obj);
+            return repository.save(entity);
+        }catch (EntityNotFoundException e){
+            throw new ResourceNotFoundException(id);
+        }
     }
 
     private void updateData(Pessoa entity, Pessoa obj) {
