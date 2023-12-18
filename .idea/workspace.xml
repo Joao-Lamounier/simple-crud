@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b494625c-6eb1-4c04-8780-52381a8d6ed4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/domain/entities/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/domain/entities/Cidade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/domain/entities/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/domain/entities/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled11/src/main/java/dominio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled11/src/main/java/dominio/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled11/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled11/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled16/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled16/pom.xml" afterDir="false" />
@@ -20,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -163,7 +163,7 @@
       <workItem from="1702490592363" duration="16278000" />
       <workItem from="1702511225456" duration="6406000" />
       <workItem from="1702571259814" duration="599000" />
-      <workItem from="1702906838327" duration="2494000" />
+      <workItem from="1702906838327" duration="4170000" />
     </task>
     <servers />
   </component>
