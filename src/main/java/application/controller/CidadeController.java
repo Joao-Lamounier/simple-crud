@@ -1,4 +1,4 @@
-package application.resources;
+package application.controller;
 
 import application.domain.entities.Cidade;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +12,8 @@ import application.services.CidadeService;
 import java.util.List;
 
 @RestController
-@RequestMapping( value = "/city/")
-public class CidadeResource {
+@RequestMapping( value = "/cidade")
+public class CidadeController {
 
     @Autowired
     private CidadeService service;

@@ -22,7 +22,7 @@ public class Pessoa implements Serializable {
     @Column(nullable = true)
     private String hobbie;
     @ManyToOne
-    @JoinColumn(name = "cidade_id", nullable = false)
+    @JoinColumn(name = "cidade_id")
     private Cidade cidade;
 
     public Pessoa() {
