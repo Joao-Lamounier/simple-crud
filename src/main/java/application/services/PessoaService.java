@@ -1,5 +1,7 @@
 package application.services;
 
+import application.controller.exceptions.ResourceExceptionHandler;
+import application.domain.entities.Cidade;
 import application.domain.entities.Pessoa;
 import application.repositories.PessoaRepository;
 import application.services.exceptions.DataBaseException;
@@ -9,14 +11,20 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
+
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
+
+import static ch.qos.logback.core.joran.spi.ConsoleTarget.findByName;
 
 @Service
 public class PessoaService {
     @Autowired
     private PessoaRepository repository;
+
+    @Autowired
+    CidadeService c_service;
 
     public List<Pessoa> findAll() {
         return repository.findAll();
@@ -28,6 +36,13 @@ public class PessoaService {
     }
 
     public Pessoa insert(Pessoa obj) {
+        Cidade cidade = c_service.findByName(obj.getCidade().getNome(), obj.getCidade().getEstado());
+//        if (cidade == null) {
+//            System.out.println("Cidade not found");
+//            return null;
+//        }
+        obj.setCidade(cidade);
+        System.out.println(cidade.getId() + " " + cidade + "================================");
         return repository.save(obj);
     }
 

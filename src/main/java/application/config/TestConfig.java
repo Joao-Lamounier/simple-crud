@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static com.fasterxml.jackson.databind.type.LogicalType.Array;
 
@@ -24,11 +25,21 @@ public class TestConfig implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Cidade c1 = new Cidade(null, "Camacho", "MG");
-        Cidade c2 = new Cidade(null, "Itapecerica", "MG");
-        Pessoa p1 = new Pessoa(null, "Joao Felipe", "Joao", "Cruzeiro", "12345678910", "Estudar", c1);
-        Pessoa p2 = new Pessoa(null, "Pedro", "P", "Gremio", "12345678911", "Jogar", c2);
-        cidadeRepository.saveAll(Arrays.asList(c1, c2));
-        pessoaRepository.saveAll(Arrays.asList(p1, p2));
+        // Recupera dados reais do banco de dados
+        List<Cidade> cidades = cidadeRepository.findAll();
+        List<Pessoa> pessoas = pessoaRepository.findAll();
+
+        if (cidadeRepository.count() == 0) {
+//            Cidade c1 = new Cidade(null, "Camacho", "MG");
+//            Cidade c2 = new Cidade(null, "Itapecrica", "MG");
+//            Pessoa p1 = new Pessoa(null, "Joao Felipe", "Joao", "Cruzeiro", "12345678910", "Estudar", c1);
+//            Pessoa p2 = new Pessoa(null, "Pedro", "P", "Gremio", "12345678911", "Jogar", c2);
+//            cidadeRepository.saveAll(Arrays.asList(c1, c2));
+//            pessoaRepository.saveAll(Arrays.asList(p1, p2));
+        } else {
+
+            cidadeRepository.saveAll(cidades);
+            pessoaRepository.saveAll(pessoas);
+        }
     }
 }

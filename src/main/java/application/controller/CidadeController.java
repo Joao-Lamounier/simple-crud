@@ -9,7 +9,7 @@ import application.services.CidadeService;
 import java.util.List;
 
 @RestController
-@RequestMapping( value = "/cidade")
+@RequestMapping( value = "api/cidade")
 public class CidadeController {
 
     @Autowired
@@ -24,5 +24,5 @@ public class CidadeController {
         Cidade obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
-
+    
 }

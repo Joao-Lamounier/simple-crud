@@ -17,7 +17,7 @@ public class Pessoa implements Serializable {
     private String apelido;
     @Column(nullable = false)
     private String time;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 11)
     private String cpf;
     @Column(nullable = true)
     private String hobbie;

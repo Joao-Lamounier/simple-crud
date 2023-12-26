@@ -14,7 +14,8 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/pessoa")
+@RequestMapping(value = "api/pessoas")
+
 public class PessoaController {
     @Autowired
     private PessoaService service;
