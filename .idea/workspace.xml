@@ -6,16 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b494625c-6eb1-4c04-8780-52381a8d6ed4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/config/TestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/controller/CidadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/controller/CidadeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/domain/entities/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/domain/entities/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/repositories/CidadeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/repositories/CidadeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/services/CidadeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/services/CidadeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/controller/DownloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/controller/DownloadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/services/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/services/PessoaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled11/src/main/java/dominio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled11/src/main/java/dominio/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled11/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled11/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled16/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled16/pom.xml" afterDir="false" />
@@ -72,29 +64,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Unnamed.executor": "Run",
-    "Maven.simple-crud [spring-boot:run].executor": "Debug",
-    "Maven.simple-crud.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/joao/IdeaProjects/fan_clube_front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.simple-crud [spring-boot:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.simple-crud.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/joao/IdeaProjects/simple-crud-angular&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
@@ -179,7 +171,9 @@
       <workItem from="1703107543058" duration="653000" />
       <workItem from="1703201298765" duration="3399000" />
       <workItem from="1703262893024" duration="7629000" />
-      <workItem from="1703606728747" duration="8515000" />
+      <workItem from="1703606728747" duration="10404000" />
+      <workItem from="1703691267798" duration="1554000" />
+      <workItem from="1703707306293" duration="1630000" />
     </task>
     <servers />
   </component>

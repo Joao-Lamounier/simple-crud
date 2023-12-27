@@ -37,12 +37,8 @@ public class PessoaService {
 
     public Pessoa insert(Pessoa obj) {
         Cidade cidade = c_service.findByName(obj.getCidade().getNome(), obj.getCidade().getEstado());
-//        if (cidade == null) {
-//            System.out.println("Cidade not found");
-//            return null;
-//        }
         obj.setCidade(cidade);
-        System.out.println(cidade.getId() + " " + cidade + "================================");
+        obj.setId(null);
         return repository.save(obj);
     }
 

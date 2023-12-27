@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/download")
+@RequestMapping("api/download")
 public class DownloadController {
     private final ExcelService service;
 
